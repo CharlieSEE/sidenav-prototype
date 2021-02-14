@@ -1,0 +1,14 @@
+@import 'const';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.App{
+    background-color: $primaryColor;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

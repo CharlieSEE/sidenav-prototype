@@ -1,0 +1,10 @@
+@import 'const';
+
+.sideNav{
+    background-color: $sideNavColor;
+    display: grid;
+    // position: fixed;
+    width: 140px;
+    height: 100%;
+    z-index: 1;
+}
