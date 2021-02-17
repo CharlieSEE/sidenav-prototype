@@ -2,7 +2,55 @@
   background-color: #2E2523;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 5% auto;
+      grid-template-rows: 5% auto;
+  position: fixed;
   width: 140px;
   height: 100%;
   z-index: 1;
+  -webkit-transition: width .6s, -webkit-filter .6s;
+  transition: width .6s, -webkit-filter .6s;
+  transition: width .6s, filter .6s;
+  transition: width .6s, filter .6s, -webkit-filter .6s;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+}
+
+.sideNav:hover {
+  width: 240px;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.sideNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  list-style-type: none;
+  font-size: 64px;
+}
+
+.sideNav li {
+  color: #BC5FE2;
+  padding: 35px 0;
+  width: 100%;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+.sideNav li:hover {
+  background-color: rgba(89, 75, 216, 0.9);
+  cursor: pointer;
 }

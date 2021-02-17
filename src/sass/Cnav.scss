@@ -3,8 +3,35 @@
 .sideNav{
     background-color: $sideNavColor;
     display: grid;
-    // position: fixed;
+    grid-template-rows: 5% auto;
+    position: fixed;
     width: 140px;
     height: 100%;
     z-index: 1;
+    transition: width .6s, filter .6s;
+    filter: brightness(0.4);
+    &:hover{
+        width: 240px;
+        filter: brightness(1);
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        list-style-type: none;
+        font-size: 64px;
+    }
+    li{
+        color:#BC5FE2;
+        padding: 35px 0;
+        width: 100%;
+        transition: background-color 0.6s;
+    }
+    li:hover{
+        background-color: rgba($color:#594bd8, $alpha: 0.9);
+        cursor: pointer;
+    }
 }

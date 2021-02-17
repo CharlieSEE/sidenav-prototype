@@ -8,10 +8,10 @@ const Cnav = () => {
                 <img src="./img/img1.webp" alt="Site Logo"/>
             </div>
             <ul className="sideNavOptContainer">
-                <li className="sideNavOpt">1</li>
-                <li className="sideNavOpt">2</li>
-                <li className="sideNavOpt">3</li>
-                <li className="sideNavOpt">4</li>
+                <li className="sideNavOpt"><i class="fas fa-spider"></i></li>
+                <li className="sideNavOpt"><i class="fas fa-radiation-alt"></i></li>
+                <li className="sideNavOpt"><i class="fas fa-dungeon"></i></li>
+                <li className="sideNavOpt"><i class="fas fa-calendar-check"></i></li>
             </ul>
         </nav>
     )
