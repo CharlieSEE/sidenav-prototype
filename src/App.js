@@ -1,10 +1,10 @@
 import "./css/App.min.css";
-import Cnav from "./components/Cnav";
+import nav from "./components/nav";
 
 function App() {
   return (
     <div className="App">
-      <Cnav />
+      <nav />
       <header className="header">
         <h1>Header</h1>
       </header>
